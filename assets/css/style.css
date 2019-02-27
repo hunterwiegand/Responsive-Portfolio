@@ -157,10 +157,15 @@ Postion image on left side, inline*/
 
 @media screen and (max-width: 980px) {
 
+    .main-content {
+        width: 700px;
+        margin: 15px 20px;
+    }
+
     h1 {
         margin: 0;
         text-align: center;
-        margin-bottom: 15px;
+        margin: 0 2%;
     }
 
 }
