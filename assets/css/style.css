@@ -1,0 +1,246 @@
+/* Styles used for all files */
+/* Defaults font for all text and sets background image */
+body {
+    margin: 0 auto;
+    background-image: url("../images/white-waves.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*defines container for the primary section of the page*/
+.main-content {
+    margin: 2% 15%;
+    width: 960px;
+    padding: 0 20px;
+    clear: both;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+/*define how the nav bar will look*/
+#nav-head {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    overflow: auto;
+}
+
+/*Makes the li elements display inline aka horizontal in this case*/
+#nav-head > nav ul li {
+    display: inline;
+}
+
+/*Positions the nav bar*/
+nav {
+    position: relative;
+    float: right;
+    margin-right: 19%;
+    margin-bottom: 1%;
+    top: 30px;
+}
+
+/*Add color to links*/
+a:link, a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+/*Position and gives h1 unique color*/
+h1 {
+    margin: 0 15%;
+    padding: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+    float: left;
+}
+
+/*Adds sticky footer to stay at the bottom of the screen and display copyright*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 10px;
+    background-color: #666;
+    color: #ccc;
+    border-top: 8px solid #4aaaa5
+}
+
+/*Gives unique color to h2 tags in main-content*/
+.main-content > h2 {
+    color: #4aaaa5;
+    padding-top: 10px;
+}
+/*End of style elements for all .html files*/
+
+/*Styles for index.html
+Position and set size for profile image*/
+#profile-img {
+    float: left;
+    width: 200px;
+    padding: 20px 20px 20px 0;
+}
+
+/*Positions bio div*/
+.bio {
+    padding-bottom: 20px;
+}
+
+/*Positions p tags in bio div*/
+.bio > p {
+    padding-top: 20px;
+}
+/*End of style elements for index.html*/
+
+/*Styles for protfolio.html
+Postion image on left side, inline*/
+.container {
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+/*Positions image on newblock*/
+.container-newLine {
+    clear: both;
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+/*Positions image to the left inline, and defines size*/
+.img-box {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+/*Positions label within img-box div*/
+.label {
+    color: #fff;
+    width: 180px;
+    position: absolute;
+    background-color: #4aaaa5;
+    padding: 10px;
+    bottom: 35px;
+    right: 20px;
+}
+/*End of styles for protfolio.html*/
+
+/*Styles for contact.html*/
+/*Expand input elements to fill parent div*/
+.test input {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.test p {
+    margin: 0 auto;
+}
+
+.test textarea {
+    margin: 10px auto;
+}
+
+#button {
+    background-color: #4aaaa5;
+    width: 10%;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+@media (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) and (min-width: 641) {
+
+    .main-content {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #nav-head {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        position: static;
+        top: 0px;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+
+    h1 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #profile-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-box {
+        /*Wanted to use width: 100%, but because some of my pictures were smaller than 500px they weren't sizing right? I think?*/
+        width: 500px;
+        height: 100%;
+    }
+
+    .label {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .main-content {
+        width: 500px;
+        margin: 15px auto;
+    }
+
+    #nav-head {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        position: static;
+        top: 0px;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+
+    h1 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #profile-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-box {
+        /*Wanted to use width: 100%, but because some of my pictures were smaller than 500px they weren't sizing right? I think?*/
+        width: 500px;
+        height: 100%;
+    }
+
+    .label {
+        width: 100%;
+    }
+}
+
